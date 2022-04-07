@@ -1,3 +1,5 @@
+/* Always use box-sizing: content-box, it´s the human way to go about it. Use it from the reset at the top of the style sheet*/
+
 #box-example {
   /* padding: 10px 20px 30px 40px;
   padding: 10px 40px; */

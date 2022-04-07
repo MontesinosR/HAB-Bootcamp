@@ -1,0 +1,31 @@
+img {
+  max-width: 100%;
+}
+
+/* Ocupa lo que necesita y solo respeta márgenes/padding horizontales */
+.inline {
+  display: inline;
+  margin-bottom: 10px;
+  width: 600px;
+  padding: 1rem;
+}
+
+/* Ocupa toda la línea y respeta todo */
+.block {
+  display: block;
+}
+
+/* Ocupa lo que necesita y respeta todo */
+.inline-block {
+  display: inline-block;
+}
+
+.m-auto {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
