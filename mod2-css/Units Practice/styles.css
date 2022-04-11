@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+ul {
+  font-size: 22px;
+}
+
+.px {
+  width: 200px;
+  background-color: lightblue;
+}
+
+.rem {
+  width: 10rem;
+  background-color: lightblue;
+}
+
+.em {
+  /* En propiedades tipográficas 1em = font-size del padre */
+  font-size: 1.5em;
+
+  /* En otras propiedades 1em = font-size del propio elemento */
+  width: 10em;
+  background-color: lightblue;
+}
+
+.percentage {
+  /* En propiedades tipográficas es relativo al font-size del propio elemento */
+  font-size: 150%;
+
+  /* En otras propiedades es relativo al tamaño del padre */
+  width: 80%;
+  background-color: lightblue;
+}
+
+.viewport {
+  /* vw relativo al ancho de la pantalla, vh a la altura */
+
+  font-size: 2vw;
+  /* font-size: 2vh; */
+
+  width: 50vw;
+  background-color: lightblue;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+button.rem-button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+main {
+  font-size: 20px;
+}
+
+button.em-button {
+  /* 30px */
+  font-size: 1.5em;
+
+  padding: 0.5em 1em;
+}
