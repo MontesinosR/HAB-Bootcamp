@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 300px;
+  float: left;
+  margin: 1rem;
+}
+
+section {
+  background-color: lightblue;
+  width: 80vw;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flow-root;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
