@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  width: 10rem;
+  height: 10rem;
+  background-color: lightblue;
+}
+
+p:nth-child(1) {
+  background-image: url("../img/fondo.jpeg");
+  /* background-size: 200px; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: top;
+}
+
+p:nth-child(2) {
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: black; */
+
+  border: 5px solid black;
+  border-radius: 10px;
+  /* border-radius: 10px 20px 30px 40px; */
+}
+
+p:nth-child(3) {
+  border: 3px dashed red;
+  border-radius: 10px 20px;
+}
+
+p:nth-child(4) {
+  box-shadow: 2px 2px 5px -2px rgb(4, 31, 111);
+}
+
+p:nth-child(5) {
+  border-bottom: 2px solid black;
+}
+
+img {
+  filter: drop-shadow(2px 2px 5px black);
+}
