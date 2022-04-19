@@ -9,16 +9,16 @@ let idioma = prompt("Introduce tu idioma => ES, EN o GL")
 
 // USAR SWITCH
 
-switch (nombre, idioma) {
-  case nombre, "ES":
+switch (idioma) {
+  case "ES":
     console.log(`Hola ${nombre}`);
     break;
 
-  case nombre, "EN":
+  case "EN":
     console.log(`Hello, ${nombre}`);
     break;
 
-  case nombre, "GL":
+  case "GL":
     console.log(`Ola, ${nombre}`);
     break;
 
