@@ -44,3 +44,25 @@ if (a > 0 && a < 4) {
 // } else {
 //   console.log("El usuario no escribió nada");
 // }
+
+
+// SWITCH
+
+const fruta = prompt("¿De qué fruta quieres saber el precio?");
+
+switch (fruta) {
+  case "Pera":
+    console.log("Las peras cuestan 40cents");
+    break;
+
+  case "Manzana":
+    console.log("Las manzanas cuestan 30cents");
+    break;
+
+  case "Naranja":
+  case "Granada":
+    console.log("Las naranjas y las granadas cuestan 80cents");
+    break;
+  default:
+    console.log("No tenemos la fruta seleccionada...");
+}
