@@ -32,6 +32,8 @@ const fruits =  [
   "melocotón",
 ]
 
+const fruitBasket = ['naranja', 'naranja', 'limón', 'pera', 'limón', 'plátano', 'naranja'];
+
 const fruitsCount = {};
 
 for (const fruit of fruits) {
@@ -45,3 +47,22 @@ for (const fruit of fruits) {
 }
 
 console.log(fruitsCount);
+
+// Quiero una función "countFruits". Recibirá por parámetro un array de frutas, y nos retornará el objeto con las frutas contadas. Luego, llamar a la función varias veces con arrays de frutas diferentes, y sacar por consola los objetos retornados
+
+
+function countFruits(array) {
+  const fruitsCount = {}
+
+  for (const string of array) {
+    if (string in array) {
+      fruitsCount[string] += 1;
+    } else {
+      fruitsCount[string] = 1;
+    }
+  }
+  return fruitsCount;
+}
+
+console.log(countFruits(fruits))
+console.log(countFruits(fruitBasket))
