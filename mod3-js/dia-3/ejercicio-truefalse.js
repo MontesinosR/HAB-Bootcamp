@@ -24,11 +24,25 @@
 "use strict";
 
 const pacientes = [true, false, true, false, false, false, true, true];
+const pacientesInfectados = [];
 
-for (const infectados in pacientes) {
-  if (infectados === true) {
-    infectados[+1] = true;
-  } else {
-    infectados[+1] = false;
+for (let i = 0; i < pacientes.length; i++) {
+  const paciente = pacientes[i];
+
+  if (pacientesInfectados[i] === undefined) {
+    pacientesInfectados[i] = paciente;
+  }
+
+  if (paciente) {
+    if (i === 0) {
+      pacientesInfectados[i + 1] = false;
+    } else if (i === pacientes.length - 1) {
+      pacientesInfectados[i - 1] = false;
+    } else {
+      pacientesInfectados[i - 1] = false;
+      pacientesInfectados[i + 1] = false;
+    }
   }
 }
+
+console.log(pacientesInfectados);
