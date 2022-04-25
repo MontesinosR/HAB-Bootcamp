@@ -1,18 +1,4 @@
-/**
- *
- *   1. Obtén todos los coches de la marca Audi. FILTER.
- *
- *   2. Obtén una lista con todos los colores de los coches de marca BMW. FILTER, MAP.
- *
- *   3. Obtén la media de precio de los coches de marca Ford. FILTER, REDUCE.
- *
- *   4. Obtén un array con las distintas marcas de coches (no se pueden repetir). NO HACER DE MOMENTO.
- *
- *   5. Obtén un array con los coches de transmisión manual y de color negro. FILTER.
- *
- *   6. Obtén la suma total de todos los precios. REDUCE.
- *
- */
+
 
 "use strict";
 
@@ -189,3 +175,18 @@ const coches = [
     transmision: "automatico",
   },
 ];
+
+//   1. Obtén todos los coches de la marca Audi. FILTER.
+
+const audi = coches.filter(coche => coche.marca === 'Audi')
+console.log(audi)
+
+//   2. Obtén una lista con todos los colores de los coches de marca BMW. FILTER, MAP.
+//
+//   3. Obtén la media de precio de los coches de marca Ford. FILTER, REDUCE.
+//
+//   4. Obtén un array con las distintas marcas de coches (no se pueden repetir). NO HACER DE MOMENTO.
+//
+//   5. Obtén un array con los coches de transmisión manual y de color negro. FILTER.
+//
+//   6. Obtén la suma total de todos los precios. REDUCE.
