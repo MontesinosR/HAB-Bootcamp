@@ -182,9 +182,33 @@ const audi = coches.filter(coche => coche.marca === 'Audi')
 console.log(audi)
 
 //   2. Obtén una lista con todos los colores de los coches de marca BMW. FILTER, MAP.
-//
+
+const coloresBMW = () => {
+  const bmw = coches.filter(coche => coche.marca === 'BMW')
+  const colores = bmw.map((bmw) => {
+    return bmw.color;
+  })
+  return colores
+}
+
+console.log(coloresBMW())
+
 //   3. Obtén la media de precio de los coches de marca Ford. FILTER, REDUCE.
-//
+
+const mediaPreciosFord = () => {
+  const cochesFord = coches.filter((coche) => {
+  return coche.marca === 'Ford'
+  });
+  const sumaPreciosFord = cochesFord.reduce((previousValue, coche) => {
+    return previousValue + coche.precio;
+  }, 0);
+
+  const precioMedio = sumaPreciosFord / cochesFord.length;
+  return console.log(precioMedio.toFixed(2))
+}
+
+mediaPreciosFord()
+
 //   4. Obtén un array con las distintas marcas de coches (no se pueden repetir). NO HACER DE MOMENTO.
 //
 //   5. Obtén un array con los coches de transmisión manual y de color negro. FILTER.
