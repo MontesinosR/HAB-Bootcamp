@@ -26,7 +26,7 @@ const getUser = (name) => {
       });
 
       if (userFound) {
-        resolve(userFound);
+        resolve(getEmail(userFound.id)); // Editada para Bonus.
       } else {
         reject(new Error("Usuario no encontrado"));
       }
