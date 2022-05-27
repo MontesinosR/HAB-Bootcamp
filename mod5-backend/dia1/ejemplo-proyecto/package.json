@@ -1,0 +1,20 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prueba": "node ./index.js",
+    "cowsay": "cowsay hola amigos!"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.5.0",
+    "minimist": "^1.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
